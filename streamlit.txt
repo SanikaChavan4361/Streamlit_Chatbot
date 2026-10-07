@@ -1,0 +1,21 @@
+llm = ChatGroq(
+    model="openai/gpt-oss-120b",
+    temperature=0
+)
+
+
+Terminal:
+pip uninstall langchain -y
+
+pip install "langchain<1.0"
+
+ python -c "from langchain.chains import RetrievalQA; print('OK')"
+
+python -m pip install --upgrade pip
+
+python -m pip install unstructured-inference
+
+python -c "import unstructured_inference; print('OK')"
+OK
+
+streamlit run app.py
